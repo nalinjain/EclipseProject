@@ -26,6 +26,7 @@ public class amaz_test {
 		}
 		Thread.sleep(1000);
 		
+		//Signin
 		driver.findElement(By.xpath("//*[contains(text(),\"Hello. Sign in\")]")).click();
 		WebElement id = driver.findElement(By.cssSelector("#ap_email"));
 		id.sendKeys("8126805818");
@@ -35,7 +36,8 @@ public class amaz_test {
 		pwd.sendKeys(Keys.ENTER);
 		
 		Thread.sleep(2000);
-		
+		 
+		//Searching items
 		WebElement searchbar = driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]"));
 		searchbar.sendKeys("Mobiles");
 		searchbar.sendKeys(Keys.ENTER);
@@ -44,29 +46,32 @@ public class amaz_test {
 		
 		driver.findElement(By.xpath("//li[1]//div[1]//div[1]//div[2]//div[1]//div[1]//div[1]//span[1]//a[1]//div[1]//img[1]")).click();
 		
+		//listin all tabs/windows
 		Set<String> ids = driver.getWindowHandles();
 		Iterator<String> it = ids.iterator();
 		
 		String parentid=it.next();
 		String childid=it.next();
+		
+		//switching to new tab
 		driver.switchTo().window(childid);
 		
+		//adding item to cart
 		driver.findElement(By.xpath("//input[@id=\"add-to-cart-button\"]")).click();
 		//driver.findElement(By.xpath("//a[@id=\"attach-close_sideSheet-link\"]")).click();
 		
+		//closing current tab
 		driver.close();
 		
 		driver.switchTo().window(parentid);
 		
-		
-		
-		
-		
+		//Signout
 		Actions a = new Actions(driver);
 		a.moveToElement(driver.findElement(By.xpath("//*[contains(text(),\"Account & Lists\")]"))).build().perform();
 		a.moveToElement(driver.findElement(By.xpath("//span[contains(text(),'Sign Out')]"))).build().perform();
 		driver.findElement(By.xpath("//span[contains(text(),'Sign Out')]")).click();
 		
+		//back to main page
 		driver.findElement(By.xpath("//i[@class='a-icon a-icon-logo']")).click();
 		
 		
