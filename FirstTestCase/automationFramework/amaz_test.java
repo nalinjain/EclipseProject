@@ -46,7 +46,7 @@ public class amaz_test {
 		
 		driver.findElement(By.xpath("//li[1]//div[1]//div[1]//div[2]//div[1]//div[1]//div[1]//span[1]//a[1]//div[1]//img[1]")).click();
 		
-		//listin all tabs/windows
+		//listing all tabs/windows
 		Set<String> ids = driver.getWindowHandles();
 		Iterator<String> it = ids.iterator();
 		
