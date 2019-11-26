@@ -11,7 +11,7 @@ public class spicejet {
 		
 		String exePath = "C:\\Users\\Nalin.jain\\Downloads\\chromedriver_win32\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", exePath);
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
 		driver.get("https://www.spicejet.com");
@@ -47,6 +47,7 @@ public class spicejet {
 
 		System.out.println(driver.getCurrentUrl());
 		System.out.println(driver.getTitle());
+		
 		
 		Thread.sleep(1000);
 		driver.quit();

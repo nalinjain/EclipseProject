@@ -32,7 +32,7 @@ public class testLinkedin {
 		
 		driver.findElement(By.xpath("//*[contains(text(),'Jobs')]")).click();
 		Thread.sleep(2000);
-		WebElement box1= driver.findElement(By.cssSelector("input.jobs-search-box__text-input"));
+		WebElement box1 = driver.findElement(By.cssSelector("input.jobs-search-box__text-input"));
 		box1.click();
 		box1.sendKeys("Test Engineer");
 		

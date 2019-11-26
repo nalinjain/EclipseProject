@@ -9,7 +9,7 @@ public class makeMyTrip {
 
 		String exePath = "C:\\Users\\Nalin.jain\\Downloads\\chromedriver_win32\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", exePath);
-		WebDriver driver=new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		
 		driver.get("https://www.makemytrip.com");
