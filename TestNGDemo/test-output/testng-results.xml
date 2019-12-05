@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="8" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Loan Dept" duration-ms="41" started-at="2019-12-04T07:07:11Z" finished-at="2019-12-04T07:07:11Z">
+    <groups>
+      <group name="Smoke">
+        <method signature="demo1.Democlass2()[pri:0, instance:test.demo1@215be6bb]" name="Democlass2" class="test.demo1"/>
+        <method signature="demo3.MobHomeLoan()[pri:0, instance:test.demo3@23ceabc1]" name="MobHomeLoan" class="test.demo3"/>
+        <method signature="demo4.WebCarLoan()[pri:0, instance:test.demo4@5d5eef3d]" name="WebCarLoan" class="test.demo4"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Grouping" duration-ms="41" started-at="2019-12-04T07:07:11Z" finished-at="2019-12-04T07:07:11Z">
+      <class name="test.demo1">
+        <test-method status="PASS" signature="Democlass2()[pri:0, instance:test.demo1@215be6bb]" name="Democlass2" duration-ms="10" started-at="2019-12-04T12:37:11Z" finished-at="2019-12-04T12:37:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Democlass2 -->
+      </class> <!-- test.demo1 -->
+      <class name="test.demo3">
+        <test-method status="PASS" signature="MobHomeLoan()[pri:0, instance:test.demo3@23ceabc1]" name="MobHomeLoan" duration-ms="3" started-at="2019-12-04T12:37:11Z" finished-at="2019-12-04T12:37:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobHomeLoan -->
+      </class> <!-- test.demo3 -->
+      <class name="test.demo4">
+        <test-method status="PASS" signature="WebCarLoan()[pri:0, instance:test.demo4@5d5eef3d]" name="WebCarLoan" duration-ms="2" started-at="2019-12-04T12:37:11Z" finished-at="2019-12-04T12:37:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebCarLoan -->
+      </class> <!-- test.demo4 -->
+    </test> <!-- Grouping -->
+  </suite> <!-- Loan Dept -->
+</testng-results>
